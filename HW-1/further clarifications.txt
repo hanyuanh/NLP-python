@@ -1,0 +1,26 @@
+further clarifications for hw1
+(Note: This will be discussed in class tomorrow)
+ 
+Which sounds to ignore when determining rhyme?
+ 
+Upon further consideration, the initial wording of the homework was correct and was intended to simplify the definition of rhyming. Per the initial wording, words "should share the same sounds in their pronunciation except for their first consonant sound(s) and anything before their first consonant sounds." Additionally, if a word starts with a vowel sound, "then it has no initial consonant(s) and then the entire word should be a suffix of the other word."
+ 
+The implications of this are that, e.g., "infinity" and "affinity" should not rhyme. This is a simplification.
+ 
+However, we muddied the water by considering an alternate definition, whereby rhyming can be determined by ignoring sounds from the beginning of the word until the first consonant sequence is reached. The implications of this are that, e.g., "ark", "ink", and "own" will rhyme with all other words.
+ 
+Both these definitions, if implemented correctly with everything else, will result in full credit in the tests. 
+ 
+However, we will not provide more support for the trickier definition and will answer all questions going forward assuming the original definition.
+To recap, if we consider these rules as a pronunciation normalization, the original and preferred definition is:
+Starting with the beginning of the pronunciation, throw out sounds until the first vowel is reached
+The alternate definition is:
+Starting with the beginning of the pronunciation, throw out sounds until the first consonant is reached, then continue throwing out sounds until the next vowel is reached...unless there are no consonants reached, in which case do not throw out anything
+Length
+ 
+per the instructions, "If one word is longer than the other, then the sounds of the shorter word (except for its first consonant sound and anything before the first consonant sound) should be a suffix of the sounds of the longer. "
+ 
+ 
+By longer we mean longer sound sequence. Specifically, longer after normalization is done, thus:
+?forgot -> F ER0 G AA1 T -> ER0 G AA1 T (note: ER0 is a vowel!); length=4
+?trot -> T R AA1 T -> AA1 T; length=2
